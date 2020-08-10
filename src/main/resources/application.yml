@@ -1,0 +1,19 @@
+server:
+  port: 7070
+  servlet:
+    context-path: /
+
+rocketmq:
+  name-server: localhost:9876
+  # 生产者
+  producer:
+    group: my-group1
+    sendMessageTimeout: 3000
+
+# properties used in the application
+demo:
+  rocketmq:
+    topic: string-topic
+    tag: tagA
+
+
